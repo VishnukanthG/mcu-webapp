@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Login Page</title>
+	<!--Made with love by Mutiullah Samim -->
+
+	<!--Bootsrap 4 CDN-->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+		integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+		    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="/static/kairos/css/base.css">
+    <link rel="stylesheet" href="/static/kairos/css/vendor.css">
+    <link rel="stylesheet" href="/static/kairos/css/main.css">
+    <link rel="stylesheet" href="/static/css/index.css">
+
+    <!-- script
+    ================================================== -->
+    <script src="/static/kairos/js/modernizr.js"></script>
+    <script src="/static/kairos/js/pace.min.js"></script>
+
+	<!--Fontawesome CDN-->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+		integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+	<!--Custom styles-->
+</head>
+
+<body style = "height: 300px; background-color: #5b4f96; " >
+
+	
+
+		<section class="vh-100 gradient-custom">
+			<div class="container1">
+			  <div class="row d-flex justify-content-center align-items-center h-100">
+				<div class="col-12 col-md-8 col-lg-6 col-xl-5">
+				  <div style = " background: linear-gradient( to right bottom, rgba(91,79,150,0.6), rgba(255,255,255,0.3)); border-radius: 15px;margin-top: 50px; margin-bottom: 50px;height:auto">
+					{% with messages = get_flashed_messages() %}  
+          			{% if messages %}  
+               			{% for message in messages %}  <br>
+                    <p style = "color: red; text-align: center;">{{ message }}</p>  
+               			{% endfor %}  
+          			{% endif %}  
+          			{% endwith %} 
+					<div class="card-body p-5 text-center">
+		  
+					  <div class="mb-md-5 mt-md-4 pb-5">
+						
+						<h2 class="fw-bold mb-2 text-uppercase">Login</h2>
+						<p class="text-white-50 mb-5">Please enter login credentials!!</p>
+						<form action="/login" method = "post">
+						<div class="form-outline form-white mb-4">
+							
+						  <input type="text" placeholder = "Userid" name = "loginuserid" id="typeEmailX" class="form-control form-control-lg" />
+						  
+						</div>
+
+						<div class="form-outline form-white mb-4">
+							
+						  <input type="text" placeholder="Username" name = "loginusername" id="typeEmailX" class="form-control form-control-lg" />
+						  
+						</div>
+		  
+						<div class="form-outline form-white mb-4">
+							
+						  <input type="password"  placeholder = "Password" name = "loginpassword" id="typePasswordX" class="form-control form-control-lg" />
+						
+						</div>
+					</div>
+					  <input style = "margin-bottom: 50px;" type="submit" value="Login">
+					</form>
+					  <div>
+						<p style = "color: black; position: relative;" class="mb-0">Don't have an account? <a href="/signup" class="text-white-50 fw-bold">Sign Up</a>
+						</p>
+					  </div>
+		  
+					</div>
+				  </div>
+				  
+				</div>
+			  </div>
+			
+		  </section>
+
+
+
+
+
+		    <!-- Java Script
+    ================================================== -->
+    <script src="/static/kairos/js/jquery-3.2.1.min.js"></script>
+    <script src="/static/kairos/js/plugins.js"></script>
+    <script src="/static/kairos/js/main.js"></script>
+</body>
+
+</html>
