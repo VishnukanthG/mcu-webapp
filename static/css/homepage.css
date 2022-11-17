@@ -1,0 +1,39 @@
+.container-1{
+    background: rgba(255,255,255,0.4);
+    height: 500px;
+    width: 1000px;
+    margin-left: 250px;
+    border-radius: 15px;
+}
+
+.container-1 h1{
+    padding: 10px;
+}
+
+.uploadbtn{
+    background-color: azure;
+    border: 2px solid black;
+    height: 30px;
+    width: 85px;
+    text-align: center;
+    border-radius: 5px;
+    float: right;
+    margin-right: 10px;
+    
+}
+
+.container-1 label:hover{
+    background-color: rgba(255,255,255,0.4);
+    transition-property: background-color;
+    transition-duration: 1s;
+}
+
+.updatebtn{
+    background-color: azure;
+    border: 2px solid black;
+    font-size: medium;
+    border-radius: 5px;
+    float: right;
+    margin-right: 20px;
+    
+}

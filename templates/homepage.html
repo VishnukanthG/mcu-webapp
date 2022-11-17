@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="/static/kairos/css/vendor.css">
     <link rel="stylesheet" href="/static/kairos/css/main.css">
     <link rel="stylesheet" href="/static/css/index.css">
+    <link rel="stylesheet" href="/static/css/homepage.css">
 
     <!-- script
     ================================================== -->
@@ -55,8 +56,14 @@
     </header> <!-- end header -->
 
 
-    <section style = "height: 100%;" class="s-about target-section">
-
+    <section class="s-about target-section">
+        <div class  = "container-1">
+            <h1>File Upload</h1>
+            <input style = " background-color: azure; border: 2px solid black; border-radius: 5px;color: black; font-size: 10px; height: 30px; width: 85px; margin-right: 20px; line-height: 2px; text-align: left;" class = "updatebtn" type="submit" value="Update" >
+            <input style = "display: none;"type="file" id="file" name="filename">
+            <label class = "uploadbtn" for="file" >Upload file </label>
+            
+        </div>
        
     </section>
 
